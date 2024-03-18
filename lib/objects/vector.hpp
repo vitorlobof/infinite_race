@@ -1,5 +1,8 @@
 #pragma once
 
+#include <iostream>
+#include <cmath>
+
 class Vector
 {
 public:
@@ -14,5 +17,6 @@ public:
     Vector operator-(const Vector &other) const;
     void operator-=(const Vector &other);
 
+    float norm();
     float dot(Vector vector);
 };
