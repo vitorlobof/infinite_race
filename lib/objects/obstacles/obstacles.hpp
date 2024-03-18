@@ -5,10 +5,9 @@
 
 class Obstacle
 {
-private:
+public:
     Circle circle;
 
-public:
     Obstacle(Vector center, int radius);
     void atualizePosition(Vector displacement);
     Vector getCenter();
