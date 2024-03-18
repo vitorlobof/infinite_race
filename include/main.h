@@ -3,6 +3,7 @@
 
 #include "display.h"
 #include "buzzer.h"
+#include "collision.h"
 #include "../lib/objects/objects.h"
 
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);

@@ -20,9 +20,12 @@ void loop()
     for (int i = 0; i < obstaclesCount; i++)
     {
         obstacles[i].render();
-
         obstacles[i].atualizePosition(obstaclesDisplacement);
         
+        if (checkForCollision(player, obstacles[i])) {
+            gameIntro();
+        }
+
         if (obstacles[i].getCenter().y < 0)
         {
             obstacles[i].moveTo(getObstacleRandomPosition());
