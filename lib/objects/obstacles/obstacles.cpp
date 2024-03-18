@@ -1,5 +1,9 @@
 #include "./obstacles.hpp"
 
+Obstacle::Obstacle() {
+    this->circle = Circle(Vector(0, 0), 2);
+}
+
 Obstacle::Obstacle(Vector center, int radius)
 {
     this->circle = Circle(center, radius);

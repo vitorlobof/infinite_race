@@ -7,7 +7,8 @@ class Obstacle
 {
 public:
     Circle circle;
-
+    
+    Obstacle();
     Obstacle(Vector center, int radius);
     void atualizePosition(Vector displacement);
     Vector getCenter();
