@@ -13,8 +13,8 @@
 #define OBSTACLE_RADIUS 3
 #define PLAYER_RADIUS 5
 
-void initDisplay();
-void gameIntro();
+void initDisplay(Adafruit_SSD1306 &display);
+void gameIntro(Adafruit_SSD1306 &display);
 Obstacle createObstacle();
 Circle createPlayer();
 

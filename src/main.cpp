@@ -2,10 +2,10 @@
 
 void setup()
 {
-    initDisplay();
+    initDisplay(display);
     initBuzzer();
 
-    gameIntro();
+    gameIntro(display);
 
     obstaclesCount = 3;
     for (int i; i < obstaclesCount; i++) {
@@ -23,7 +23,7 @@ void loop()
         obstacles[i].atualizePosition(obstaclesDisplacement);
         
         if (checkForCollision(player, obstacles[i])) {
-            gameIntro();
+            gameIntro(display);
         }
 
         if (obstacles[i].getCenter().y < 0)
