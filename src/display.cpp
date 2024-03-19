@@ -21,19 +21,19 @@ void gameIntro(Adafruit_SSD1306 &display)
 
   // Scroll in various directions, pausing in-between:
   display.startscrollright(0x00, 0x0F);
-  delay(2000);
+  delay(100);
   display.stopscroll();
-  delay(1000);
+  delay(100);
   display.startscrollleft(0x00, 0x0F);
-  delay(2000);
+  delay(100);
   display.stopscroll();
-  delay(1000);
+  delay(100);
   display.startscrolldiagright(0x00, 0x07);
-  delay(2000);
+  delay(100);
   display.startscrolldiagleft(0x00, 0x07);
-  delay(2000);
+  delay(100);
   display.stopscroll();
-  delay(1000);
+  delay(100);
 }
 
 Vector getObstacleRandomPosition()
